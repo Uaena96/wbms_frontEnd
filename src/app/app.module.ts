@@ -12,6 +12,9 @@ import { LoginComponent } from './login/login.component';
 import { CreateTransactionComponent } from './create-transaction/create-transaction.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { CustomerComponent } from './customer/customer.component';
+import { SettingsComponent } from './settings/settings.component';
+import { RegisterHouseholdComponent } from './register-household/register-household.component';
+import { EmployeeRecordsComponent } from './employee-records/employee-records.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CustomerComponent } from './customer/customer.component';
     LoginComponent,
     CreateTransactionComponent,
     TransactionComponent,
-    CustomerComponent
+    CustomerComponent,
+    SettingsComponent,
+    RegisterHouseholdComponent,
+    EmployeeRecordsComponent
     
   ],
   imports: [

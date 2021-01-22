@@ -112,9 +112,11 @@
     left: 255px;
     width: 0;
     height: 100%;
-    margin-left: -150px;
+    margin-left: -235px;
+    margin-bottom: 20%;
     overflow-y: auto;
-    background: rgb(18, 101, 196);
+    // background: rgb(18, 101, 196);
+    background-color: #fff;
     border-radius: 8px;
     margin-top: 10px;
     -webkit-transition: all 0.5s ease;
@@ -158,13 +160,13 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+    background: #39b3d8;
 }
 
 .sidebar-nav li a:active,
@@ -179,12 +181,17 @@
 }
 
 .sidebar-nav>.sidebar-brand a {
-    color: #ffffff;
+    color: #000;
 }
 
 .sidebar-nav>.sidebar-brand a:hover {
-    color: #fff;
+    color: #000;
     background: none;
+}
+
+.sub-menu>li:hover {
+    border-radius: 5px;
+    background: #39b3d8;
 }
 
 @media(min-width:768px) {

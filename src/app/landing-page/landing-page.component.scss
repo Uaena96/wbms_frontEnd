@@ -1,35 +1,60 @@
-#wrapper {
-    overflow-x: hidden;
-    background-color: white;
+.card-counter {
+    box-shadow: 2px 2px 10px #DADADA;
+    margin: 5px;
+    padding: 20px 10px;
+    background-color: #fff;
+    height: 100px;
+    border-radius: 5px;
+    transition: .3s linear all;
 }
 
-#sidebar-wrapper {
-    min-height: 100vh;
-    margin-left: -15rem;
-    -webkit-transition: margin .25s ease-out;
-    -moz-transition: margin .25s ease-out;
-    -o-transition: margin .25s ease-out;
-    transition: margin .25s ease-out;
-    // /* background-color: #304ffe; */
-    // background: url(../img/coffee1.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-    // background-repeat: no-repeat;
-    // background-size: cover;
+.card-counter:hover {
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .3s linear all;
 }
 
-#sidebar-wrapper .sidebar-heading {
-    padding: 0.875rem 1.25rem;
+.card-counter.primary {
+    background-color: #007bff;
+    color: #FFF;
 }
 
-#sidebar-wrapper .list-group {
-    width: 15rem;
+.card-counter.danger {
+    background-color: #ef5350;
+    color: #FFF;
 }
 
-#page-content-wrapper {
-    min-width: 100vw;
+.card-counter.success {
+    background-color: #66bb6a;
+    color: #FFF;
 }
 
-#wrapper.toggled #sidebar-wrapper {
-    margin-left: 0;
+.card-counter.info {
+    background-color: #26c6da;
+    color: #FFF;
+}
+
+.card-counter i {
+    font-size: 5em;
+    opacity: 0.2;
+}
+
+.card-counter .count-numbers {
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    font-size: 32px;
+    display: block;
+}
+
+.card-counter .count-name {
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 0.5;
+    display: block;
+    font-size: 18px;
 }
 
 @media (min-width: 768px) {
